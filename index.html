@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>Spotify - Your Favorite Music is here</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <video
+        autoplay loop muted placeinline id="helo">
+        <source src="back.mp4" type="video/mp4">
+    </video>
+    
+    <nav>
+        <ul>
+            <li class="brand"><img src="spotify.png" alt="Spotify">Swabify</li>
+            <li><a href="index.html" class="buttonlink">Home</a></li>
+            <li><a href="picture.html" class="buttonlink">Picture</a></li>
+        </ul>
+    </nav>
+    <div class ="container">
+        <div class="songlist">
+            <h1>Best of Swabarna Banerjee</h1>
+          <div class="songitemcontainer">
+                <div class="songitem">
+                <img alt="1">
+                <span class="songName">Jiya Tui Chaara</span>
+                <span class="songlistplay"><span class="timestamp">01:36<i  id="0" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img alt="2">
+                    <span class="songName">Jiya Tui Chaara</span>
+                    <span class="songlistplay"><span class="timestamp">01:23<i  id="1" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img alt="3">
+                    <span  class="songName">Jiya Tui Chaara</span>
+                    <span class="songlistplay"><span class="timestamp">02:13<i id="2" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img alt="4">
+                    <span class="songName">Jiya Tui Chaara</span>
+                    <span class="songlistplay"><span class="timestamp">01:43<i  id="3"class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img alt="5">
+                    <span class="songName">Jiya Tui Chaara</span>
+                    <span class="songlistplay"><span class="timestamp">01:33<i  id="4"class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img alt="6">
+                    <span class="songName">Jiya Tui Chaara</span>
+                    <span class="songlistplay"><span class="timestamp">01:50<i id="5" class="fa-sharp  songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="banner"></div>
+        
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            
+            <i class="fa-solid fa-backward" id="previous"></i>
+            <i class="fa-sharp fa-regular fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward" id="next"></i>
+        </div>
+        <div class="songinfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"><span id="mastersongName"> Jiya-Tui-Chara</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
